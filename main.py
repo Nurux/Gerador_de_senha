@@ -7,7 +7,6 @@ def main():
     tamanho = int(input('Digite o tamanho das senhas: '))
     char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*()_+^~<>/0123456789'
     
-    
     with open('Senhas_Geradas.txt', 'a') as arquivo:
         for qtd in range(quant):
             senha = ''
@@ -19,8 +18,6 @@ def main():
             arquivo.write(f'{qtd+1} senha: {senha}\n')
 
     print('Suas senhas foram geradas com sucesso!')
-
-
 
 if __name__ == '__main__':
     main()
